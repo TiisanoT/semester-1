@@ -10,4 +10,11 @@
 
 # 3: 27^2 x 19/4
 
+answer1 = (4 * 8) * 6
+print(answer1)
 
+answer2 = (2 ** 3) / (8/3)
+print(answer2)
+
+answer3 = (27 ** 2) * (19/4)
+print(answer3)

@@ -14,3 +14,25 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+
+num1 = int(input("Please enter a number:"))
+num2 = int(input("Please enter another number: "))
+
+result = num1 * num2
+
+print(f"The result is  + {result}")
+
+try:
+             num1 = int(input("Please enter a number:"))
+             num2 = int(input("Please enter another number: "))
+
+             result = num1 * num2
+
+except:
+        print("This is not a number")
+
+       
+
+        
+         
+           
