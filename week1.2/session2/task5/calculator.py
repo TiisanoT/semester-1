@@ -18,17 +18,17 @@ operation = int(input("Enter your choice (1-4): "))
 
 # Conditional block to perform the selected operation
 
-if XXX:
+if num1 + num2:
     result = num1 + num2
     print(f"The result of addition is: {result}")
-elif XXX:
+elif num1 - num2:
     result = num1 - num2
     print(f"The result of subtraction is: {result}")
-elif XXX:
+elif num1 * num2:
     result = num1 * num2
     print(f"The result of multiplication is: {result}")
-elif XXX:
-    if XXX:
+elif operation >=1 and operation <=4:
+    if num1 / num2:
         result = num1 / num2
         print(f"The result of division is: {result}")
     else:
