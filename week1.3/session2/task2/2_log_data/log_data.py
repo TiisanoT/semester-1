@@ -7,6 +7,15 @@
 
 # open and read the file
 
+try:
+    with open ("site.txt", "r") as file:
+        lines = file.readlines()
+
+        print("Rows :", len(lines) - 1)
+
+
+except FileNotFoundError:
+    print("File not found")
 # find all failed login attempts (POST /login with the response 401)
 # and print these out in a human-readable format:
 # IP address 192.168.1.17 failed to login at 10:42:12 on 2024-10-20
