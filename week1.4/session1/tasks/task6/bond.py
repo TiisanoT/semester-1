@@ -5,20 +5,29 @@
 
 
 def isBond(intList):
-    """
-    This function accepts a list of integers and returns True if the
-    sequence 0, 0, 7 appears in the list, in that order. Return False
-    otherwise. The numbers do not need to be consecutive, but must appear
-    in the specified order.
-    """
+  
+sequence = [0, 0, 7]
+index = 0
 
-    # pass is a Python keyword used as a placeholder for future code,
-    # meaning you need to delete pass to write your code.
-    # Nothing happens when pass is executed.
+for num in intList:
+ if num == sequence[index]:
+    index += 1
 
-    pass     # delete pass to write your code
+  
+    if index == len(sequence):
+     return True
+
+ return False
+
+
 
 # Check if the following lines of code produce the correct output
 print(isBond([1, 2, 4, 0, 0, 7, 5]))   # True
 print(isBond([1, 0, 2, 4, 0, 5, 7]))   # True
 print(isBond([1, 7, 2, 0, 4, 5, 0]))   # False
+
+
+
+
+
+

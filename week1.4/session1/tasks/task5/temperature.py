@@ -31,3 +31,5 @@ def celsius_to_fahrenheit(celsius):
 celsius = float(input("Enter temperature in Celsius: "))
 
 # Complete the rest of the code here
+farenheit = celsius_to_fahrenheit(celsius)
+print(f"Tempterature in farenheit:  {farenheit}")
