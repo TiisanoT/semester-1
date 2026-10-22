@@ -1,6 +1,30 @@
 # Week 4, Session 2: Task 2
 
 def most_frequent_string(votes):
+
+    if not votes:
+        return None, None
+
+
+    counts = {}
+    most_frequent = None
+    highest_count = 0
+
+
+    for vote in votes:
+        if vote in counts:
+            counts[vote] += 1
+        else:
+            counts[vote] = 1
+
+        if counts[vote] > highest_count:
+            highest_count = counts[vote]
+            most_frequent = vote
+
+    return most_frequent, highest_count
+
+
+    
     """
     This function identifies the string that appears most frequently
     (highest count) in the votes argument and returns it along with the count
