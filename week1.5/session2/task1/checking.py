@@ -34,3 +34,5 @@ class Point:
 
 p = Point("two", "one")
 print(p.distance())
+
+
