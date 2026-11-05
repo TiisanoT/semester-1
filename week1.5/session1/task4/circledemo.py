@@ -8,3 +8,18 @@
 #  - Creates a Circle object, using the Point object and a value for radius
 #  - Displays the area of the circle
 #  - Displays the perimeter of the circle
+
+from geometry import Point, Circle 
+
+centre = Point(0,0)
+
+circle = Circle(centre,5)
+
+print("Area of circle:", circle.area())
+
+print("Perimeter of circle:", circle.perimeter())
+
+
+
+
+
