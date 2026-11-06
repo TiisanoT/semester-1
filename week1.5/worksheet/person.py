@@ -10,13 +10,15 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details
     def __init__(self, name, birth):
+    
+        """" Create a person with a name and date of birth."""
 
         if not isinstance(name, str):
             raise TypeError("Name must be a string")
 
 
         if name == "":
-            raise TypeError("Name cannot be empty")
+            raise ValueError("Name cannot be empty")
 
         if not isinstance(birth, date):
             raise TypeError("Birth must be date object")
@@ -30,9 +32,11 @@ class Person:
     # (see README.md for further details)
 
     def initials(self):
+        """ Return uppercase initials of the persons name."""
         return "".join(part[0].upper() for part in self.name.split())
     
 
     def is_birthday(self):
+        """ Return True if today is the persons birthday"""
         today = date.today()
         return today.month == self.birth.month and today.day == self.birth.day
